@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>99 Bottles of Beer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="font-family: Arial, sans-serif; font-size: 1.2em; line-height: 1.6em; margin: 20px;
-             background-color: rgb(76, 76, 184); text-align: center; 
-             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: rgb(49, 57, 65);">
-<a href="https://www.99-bottles-of-beer.net/lyrics.html"><h1 style="color: blanchedalmond;">99 Bottles of Beer</h1> </a>
+<body>
 
-<script>
-    function singSong() {
-        for (let i = 99; i > 0; i--) {
-            document.write(`${i} bottle${i > 1 ? "s" : ""} of beer on the wall, ${i} bottle${i > 1 ? "s" : ""} of beer.<br>`);
-            document.write(`Take one down and pass it around, ${i - 1 > 0 ? i - 1 : "no more"} bottle${i - 1 === 1 ? "" : "s"} of beer on the wall.<br><br>`);
-        }
-        document.write("No more bottles of beer on the wall, no more bottles of beer.<br>");
-        document.write("Go to the store and buy some more, 99 bottles of beer on the wall.<br>");
-    }
+<a href="https://www.99-bottles-of-beer.net/lyrics.html">
+    <h1>99 Bottles of Beer</h1>
+</a>
 
-    singSong();
-</script>
-<a href="https://mdparvezmussaruf.github.io/myPortfolio/"><footer style="position: relative; bottom: 0; width: 100%; 
-  background-color: rgb(28, 28, 175); color: rgb(255, 255, 255); padding: 10px 0;"> MD Parvez Mussaruf &copy; 2025</footer></a>
+<div class="song-container" id="song"></div>
+
+<script src="index.js"></script>
+
+<a href="https://mdparvezmussaruf.github.io/myPortfolio/">
+    <footer>MD Parvez Mussaruf &copy; 2025</footer>
+</a>
 
 </body>
 </html>
