@@ -12,6 +12,7 @@ function singSong() {
 
         let paragraph1 = document.createElement("p");
         let paragraph2 = document.createElement("p");
+        let spacer = document.createElement("br");
 
         paragraph1.textContent = line1;
         paragraph2.textContent = line2;
@@ -21,6 +22,7 @@ function singSong() {
 
         songContainer.appendChild(paragraph1);
         songContainer.appendChild(paragraph2);
+        songContainer.appendChild(spacer);
     }
 }
 
