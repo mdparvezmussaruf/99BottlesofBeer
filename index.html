@@ -12,14 +12,10 @@
 
 <script>
     function singSong() {
-        let bottles = 99;
-
-        while (bottles > 0) {
-            document.write(bottles + " bottles of beer on the wall, " + bottles + " bottles of beer.<br>");
-            bottles--; 
-            document.write("Take one down and pass it around, " + (bottles > 0 ? bottles : "no more") + " bottles of beer on the wall.<br><br>");
+        for (let i = 99; i > 0; i--) {
+            document.write(`${i} bottle${i > 1 ? "s" : ""} of beer on the wall, ${i} bottle${i > 1 ? "s" : ""} of beer.<br>`);
+            document.write(`Take one down and pass it around, ${i - 1 > 0 ? i - 1 : "no more"} bottle${i - 1 === 1 ? "" : "s"} of beer on the wall.<br><br>`);
         }
-
         document.write("No more bottles of beer on the wall, no more bottles of beer.<br>");
         document.write("Go to the store and buy some more, 99 bottles of beer on the wall.<br>");
     }
