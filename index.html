@@ -11,28 +11,21 @@
 <a href="https://www.99-bottles-of-beer.net/lyrics.html"><h1 style="color: blanchedalmond;">99 Bottles of Beer</h1> </a>
 
 <script>
-    function singBeerSong() {
-        let count = 99;
+    function singSong() {
+        let bottles = 99;
 
-        while (count > 0) {
-            let bottleWord = count === 1 ? "bottle" : "bottles";
-            document.write(`${count} ${bottleWord} of beer on the wall, ${count} ${bottleWord} of beer.<br>`);
-            
-            count--; //take one down
-
-            let nextBottleWord = count === 1 ? "bottle" : "bottles";
-            let nextCount = count > 0 ? count : "no more";
-            document.write(`Take one down, pass it around, ${nextCount} ${nextBottleWord} of beer on the wall.<br><br>`);
+        while (bottles > 0) {
+            document.write(bottles + " bottles of beer on the wall, " + bottles + " bottles of beer.<br>");
+            bottles--; 
+            document.write("Take one down and pass it around, " + (bottles > 0 ? bottles : "no more") + " bottles of beer on the wall.<br><br>");
         }
 
-        //no bottles left
         document.write("No more bottles of beer on the wall, no more bottles of beer.<br>");
         document.write("Go to the store and buy some more, 99 bottles of beer on the wall.<br>");
     }
 
-    singBeerSong();
+    singSong();
 </script>
-
 <a href="https://mdparvezmussaruf.github.io/myPortfolio/"><footer style="position: relative; bottom: 0; width: 100%; 
   background-color: rgb(28, 28, 175); color: rgb(255, 255, 255); padding: 10px 0;"> MD Parvez Mussaruf &copy; 2025</footer></a>
 
